@@ -27,8 +27,11 @@ Route::get("/users",[UserController::class , 'index']);
 Route::post("/user",[UserlController::class,'store']);
 Route::get("/users/{id}",[UserlController::class,'show']);
 Route::put("/users/{id}",[UserlController::class,'update']);
+
 Route::delete("/users/{id}",[UserlController::class,'destroy']);
 
 
 Route::get("/authors",[AuthorController::class , 'index']);
+
 Route::post("/author",[AuthorController::class,'store']);
+
